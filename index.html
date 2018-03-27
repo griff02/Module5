@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    
+<html>
+<head>
+<title>Module 5 Justin Griffis</title>
+<link rel="stylesheet" type="text/css" href="styles/assignment5.css" />
+<script src="js/assignment5.js"></script>
+</head>
+
+<body>
+<h1>Module 5 Demonstration</h1>
+<hr>
+    <select onchange="MenuChoice();" id="menu">
+            <option> Choose an option</option>
+            <option> Display section 1</option>
+            <option> Display section 2</option>
+            <option> Display section 3</option>
+        </select>
+    <hr>
+    </section>
+    <br>
+    <section id="section1" class="display1">
+    <label id="AllCustomers">Display Customer Information here:</label>
+    <br>
+    <button onclick="CustomerInfo();">Retrieve Customer Information</button>
+    </section>
+    
+        
+    <section id="section2" class="display2">
+        <h2>Customer Order History</h2>
+        <label>Please enter a Customer ID: </label>
+        <input type="text" id="custid"><br>
+        <button onclick="OrderHistory();" id="orders">Get Customer Order History:</button>
+        <br>
+        <label id="HistoryDisplay">Customer Order History Displayed Here:</label>
+    </section>
+    
+    
+    <section id="section3" class="display3">
+        <h2>Customer Orders</h2>
+        <hr>
+        <label>Please Enter the desired Customer's ID:</label>
+        <input type="text" id="custid2">
+        <br>
+        <button onclick= "GetOrders();" id="orders">Get Customer Orders.</button>
+        <hr>
+        <br>
+        <label id="orderdisplay">Customer's Orders Displayed Here:</label>
+    </section>
+    
+</body>
+
+</html>
